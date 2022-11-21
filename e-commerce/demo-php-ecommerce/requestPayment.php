@@ -12,7 +12,6 @@ function launchPayment()
   $momo = new Momo();
   //Enter your apikey here
   $momo->setApiKey("test_FOdigzgSopV8GZggZa89");
-  $momo->setApiKey("live-CHIPDEALS-CTO-2000-8100-ELR@81004s");
 
   $request_body = file_get_contents('php://input');
   $bodyData = json_decode($request_body, true);
